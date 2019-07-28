@@ -1,9 +1,11 @@
 <li>
+	{{!-- Is what was typed in for --}}
 	{{name}}
-
-	<button class="change-eat" data-id="{{id}}" data-neweat="{{eat}}">
-		{{#if eat}}Eat the burger{{else}}""{{/if}}
-	</button>
+{{!-- Literally just changing the text, not moving it else where... --}}
+	<br><button class="change-eat" data-id="{{id}}" data-neweat="{{eat}}">
+		{{!-- {{#if eat}}Eat the burger{{/if}} --}}
+		{{#if eat}}Eat the burger</button>{{/if}}
+	
 
 	{{!-- <button class="delete-burger" data-id="{{id}}">
 		Remove Burger
