@@ -1,11 +1,13 @@
 <li>
 	{{!-- Is what was typed in for --}}
 	{{name}}
-{{!-- Literally just changing the text, not moving it else where... --}}
+	{{!-- Literally just changing the text, not moving it else where... --}}
 	<br><button class="change-eat" data-id="{{id}}" data-neweat="{{eat}}">
-		{{!-- {{#if eat}}Eat the burger{{/if}} --}}
-		{{#if eat}}Eat the burger</button>{{/if}}
-	
+		{{#if eat}}Eat the burger</button>{{else}}{{/if}}
+	{{!-- {{#if eat}}Eat the burger{{/if}} --}}
+	{{!-- {{#if eat}}Eat the burger</button>{{else}}<button>test</button>{{/if}} Only makes a second button --}}
+
+
 
 	{{!-- <button class="delete-burger" data-id="{{id}}">
 		Remove Burger

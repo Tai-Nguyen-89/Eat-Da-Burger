@@ -1,6 +1,5 @@
-<h1>Enter a burger below to order the burger you want to eat!</h1>
-
 <div class="container">
+  <h1 id="title">Enter a burger below to order the burger you want to eat!</h1>
   <div class="row">
 
     <div class="col">
@@ -17,9 +16,9 @@
     <div class="col">
     <h2>Burgers you've ate!</h2>
       <ul>
-        {{#each burgers}}
+        {{#each burgers}} 
         {{#if eatBurger}}
-        {{> burgers/burger-block eat=false visible=false}}
+        {{> burgers/burger-block eat=false}}
         {{/if}}
         {{/each}}
       </ul>
@@ -32,9 +31,9 @@
 
 
 
-  </div>
-</div>
+
 <div class="col">
+  <div id="colorRed">
 <h2>Add a Burger</h2>
 <form class="create-form">
 
@@ -43,15 +42,20 @@
     <input type="text" id="ca" name="name">
   </div>
 
+  <button type="submit">Add Burger</button>
+
   {{!-- Bad work around, default button to generate burger. --}}
   <div class="form-group">
     <label for="slee"></label><br>
     <input type="radio" name="eatBurger" value="0" hidden checked><br>
     {{!-- <input type="radio" name="eatBurger" value="1"> --}}
   </div>
+</div>
 
-  <button type="submit">Add Burger</button>
 </form>
 <br>
 <br>
+</div>
+
+  </div>
 </div>

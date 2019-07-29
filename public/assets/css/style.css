@@ -2,6 +2,14 @@ body {
 background-color: orange !important;
 }
 
+#title {
+  color: rgb(5, 129, 52);
+}
+
+#colorRed {
+  color: rgb(163, 30, 30)
+}
+
 li {
   padding: 5px;
   margin: 5px;
