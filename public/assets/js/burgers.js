@@ -2,19 +2,19 @@
 // updates mysql with updates.
 
 $(function() {
-//   $(".delete-burger").on("click", function(event) {
-//     var id = $(this).data("id");
-//     // // Send the PUT request.
-//     $.ajax("/api/burgers/" + id, {
-//       type: "DELETE"
-//     }).then(
-//       function() {
-//         console.log("DELETE BURGER WITH ID: ", id);
-//         // Reload the page to get the updated list
-//         location.reload();
-//       }
-//     );
-//   });
+  $(".delete-burger").on("click", function(event) {
+    var id = $(this).data("id");
+    // // Send the PUT request.
+    $.ajax("/api/burgers/" + id, {
+      type: "DELETE"
+    }).then(
+      function() {
+        console.log("DELETE BURGER WITH ID: ", id);
+        // Reload the page to get the updated list
+        location.reload();
+      }
+    );
+  });
   $(".change-eat").on("click", function(event) {
     var id = $(this).data("id");
     var newEat = $(this).data("neweat");
