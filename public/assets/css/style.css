@@ -1,0 +1,36 @@
+* {
+  font-family: 'Bungee Inline', cursive;
+}
+
+body {
+background-color: orange !important;
+}
+
+#title {
+  color: rgb(5, 129, 52);
+}
+
+#colorRed {
+  color: rgb(163, 30, 30)
+}
+
+li {
+  padding: 5px;
+  margin: 5px;
+  background: #af7a6d;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+

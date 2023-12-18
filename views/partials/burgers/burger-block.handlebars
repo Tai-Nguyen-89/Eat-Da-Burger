@@ -1,0 +1,17 @@
+<li>
+	{{!-- Is what was typed in for --}}
+	{{name}}
+	{{!-- Literally just changing the text, not moving it else where... Interesting it still applies button after else. --}}
+	<br>
+		{{#if eat}}<button type="button" class="btn btn-success change-eat" data-id="{{id}}" data-neweat="{{eat}}">Eat the burger</button>
+		{{!-- <button class="change-eat" data-id="{{id}}" data-neweat="{{eat}}">Eat the burger</button> --}}
+		{{else}} <button type="button" class="btn btn-success delete-burger" data-id="{{id}}">
+		Remove burger
+	</button>
+		{{/if}}
+
+{{!-- Toggle on to add delete button --}}
+	{{!-- <button class="delete-burger" data-id="{{id}}">
+		Remove burger
+	</button> --}}
+</li>
